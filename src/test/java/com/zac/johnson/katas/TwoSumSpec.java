@@ -3,7 +3,7 @@ package com.zac.johnson.katas;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 public class TwoSumSpec {
@@ -22,7 +22,7 @@ public class TwoSumSpec {
 
         int[] result = new int[]{0, 1};
 
-        assertEquals(testTwoSum.twoSum(nums, target), result);
+        assertArrayEquals(testTwoSum.twoSum(nums, target), result);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class TwoSumSpec {
 
         int[] result = new int[]{1,2};
 
-        assertEquals(testTwoSum.twoSum(nums, target), result);
+        assertArrayEquals(testTwoSum.twoSum(nums, target), result);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class TwoSumSpec {
 
         int[] result = new int[]{0, 1};
 
-        assertEquals(testTwoSum.twoSum(nums, target), result);
+        assertArrayEquals(testTwoSum.twoSum(nums, target), result);
     }
 }
 
