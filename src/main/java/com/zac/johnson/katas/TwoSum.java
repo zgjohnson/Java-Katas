@@ -1,5 +1,6 @@
 package com.zac.johnson.katas;
 
+
 public class TwoSum {
     /*
     * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -28,4 +29,9 @@ public class TwoSum {
     * -109 <= target <= 109
     * Only one valid answer exists.
     */
+    public int[] twoSum(int[] nums, int target) {
+
+        return new int[2];
+    }
+
 }
