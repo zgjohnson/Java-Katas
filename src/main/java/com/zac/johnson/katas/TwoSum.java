@@ -43,7 +43,6 @@ public class TwoSum {
             }
             previousArray.put(nums[i], i);
         }
-
         return results;
     }
 
