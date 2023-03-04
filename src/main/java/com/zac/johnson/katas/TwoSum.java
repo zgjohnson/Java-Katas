@@ -1,6 +1,9 @@
 package com.zac.johnson.katas;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum {
     /*
     * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -30,8 +33,17 @@ public class TwoSum {
     * Only one valid answer exists.
     */
     public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        Map<Integer,Integer> previousArray = new HashMap<>();
 
-        return new int[2];
+        for(int i = 0; i < nums.length; i++){
+            if(previousArray.containsKey(target - nums[i])){
+                result[0] = previousArray.get(target - nums[i]);
+                result[1] = i;
+            }
+            previousArray.put(nums[i], i);
+        }
+        return result;
     }
 
 }
